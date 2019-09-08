@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.1 (Python 3.7.4 on win32)" generated="20190908 23:24:45.803" rpa="false">
+<suite id="s1" name="reserverUnBilletDeTrain" source="C:\Users\yodur\OneDrive\Documents\GitHub\Robot_Framework\deploy\SNCF\suites\reserverUnBilletDeTrain.robot">
+<test id="s1-t1" name="Se Connecter">
+<kw name="Ouvrir Le Site SNCF" library="pageAccueil">
+<doc>Parcours permettant d'accéder au site SNCF</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>https://www.sncf.com/fr</arg>
+</arguments>
+<msg timestamp="20190908 23:24:46.849" level="INFO">Opening browser 'firefox' to base url 'https://www.sncf.com/fr'.</msg>
+<status status="PASS" starttime="20190908 23:24:46.849" endtime="20190908 23:25:15.291"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Menu</arg>
+</arguments>
+<msg timestamp="20190908 23:25:15.478" level="INFO">Current page contains text 'Menu'.</msg>
+<status status="PASS" starttime="20190908 23:25:15.306" endtime="20190908 23:25:15.478"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>JE SUIS SUR LA PAGE DE LA SNCF</arg>
+</arguments>
+<msg timestamp="20190908 23:25:15.478" level="INFO">JE SUIS SUR LA PAGE DE LA SNCF</msg>
+<status status="PASS" starttime="20190908 23:25:15.478" endtime="20190908 23:25:15.478"></status>
+</kw>
+<status status="PASS" starttime="20190908 23:24:46.849" endtime="20190908 23:25:15.478"></status>
+</kw>
+<status status="PASS" starttime="20190908 23:24:46.834" endtime="20190908 23:25:15.478" critical="yes"></status>
+</test>
+<test id="s1-t2" name="Renseigner Les Criteres">
+<kw name="Renseigner Les Criteres De Recherche" library="pageAccueil">
+<doc>Renseigner les villes et valider</doc>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<arguments>
+<arg>Page Should Contain Element</arg>
+<arg>${BOUTON_ACCEPTER_COOKIES}</arg>
+</arguments>
+<assign>
+<var>${presenceBandeauCookies}</var>
+</assign>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${BOUTON_ACCEPTER_COOKIES}</arg>
+</arguments>
+<msg timestamp="20190908 23:25:15.510" level="INFO">Current page contains element '//*[@class='agree-button btn btn-small cookies-btn-accept']'.</msg>
+<status status="PASS" starttime="20190908 23:25:15.494" endtime="20190908 23:25:15.510"></status>
+</kw>
+<msg timestamp="20190908 23:25:15.510" level="INFO">${presenceBandeauCookies} = True</msg>
+<status status="PASS" starttime="20190908 23:25:15.478" endtime="20190908 23:25:15.510"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${presenceBandeauCookies}'=='${TRUE}'</arg>
+<arg>Click Button</arg>
+<arg>${BOUTON_ACCEPTER_COOKIES}</arg>
+</arguments>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${BOUTON_ACCEPTER_COOKIES}</arg>
+</arguments>
+<msg timestamp="20190908 23:25:15.525" level="INFO">Clicking button '//*[@class='agree-button btn btn-small cookies-btn-accept']'.</msg>
+<status status="PASS" starttime="20190908 23:25:15.525" endtime="20190908 23:25:17.181"></status>
+</kw>
+<status status="PASS" starttime="20190908 23:25:15.510" endtime="20190908 23:25:17.197"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=departure-place</arg>
+<arg>Rennes</arg>
+</arguments>
+<msg timestamp="20190908 23:25:17.197" level="INFO">Typing text 'Rennes' into text field 'id=departure-place'.</msg>
+<status status="PASS" starttime="20190908 23:25:17.197" endtime="20190908 23:25:17.525"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=arrival-place</arg>
+<arg>Brest</arg>
+</arguments>
+<msg timestamp="20190908 23:25:17.525" level="INFO">Typing text 'Brest' into text field 'id=arrival-place'.</msg>
+<status status="PASS" starttime="20190908 23:25:17.525" endtime="20190908 23:25:17.838"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${BOUTON_RECHERCHER}</arg>
+</arguments>
+<msg timestamp="20190908 23:25:17.853" level="INFO">Clicking element '//*[@class='block-search-home-itinerary-submit']//button'.</msg>
+<status status="PASS" starttime="20190908 23:25:17.838" endtime="20190908 23:25:21.744"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>PARCOURS DE LA PAGE D ACCUEIL TERMINE</arg>
+</arguments>
+<msg timestamp="20190908 23:25:21.759" level="INFO">PARCOURS DE LA PAGE D ACCUEIL TERMINE</msg>
+<status status="PASS" starttime="20190908 23:25:21.744" endtime="20190908 23:25:21.759"></status>
+</kw>
+<status status="PASS" starttime="20190908 23:25:15.478" endtime="20190908 23:25:21.759"></status>
+</kw>
+<status status="PASS" starttime="20190908 23:25:15.478" endtime="20190908 23:25:21.759" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20190908 23:24:45.818" endtime="20190908 23:25:21.759"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0">Critical Tests</stat>
+<stat pass="2" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" id="s1" name="reserverUnBilletDeTrain">reserverUnBilletDeTrain</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

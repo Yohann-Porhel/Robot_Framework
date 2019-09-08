@@ -1,0 +1,217 @@
+PATCH DIRECTORY C:\ProgramData\Mozilla\updates\9AEE0844279D1F31\updates\0
+INSTALLATION DIRECTORY C:\Users\Public\Documents\app\FirefoxPortable\App\Firefox
+WORKING DIRECTORY C:\Users\Public\Documents\app\FirefoxPortable\App\Firefox
+NS_main: callback app file open attempt 1 failed. File: C:\Users\Public\Documents\app\FirefoxPortable\App\Firefox\firefox.exe. Last error: 32
+NS_main: callback app file open attempt 2 failed. File: C:\Users\Public\Documents\app\FirefoxPortable\App\Firefox\firefox.exe. Last error: 32
+NS_main: callback app file open attempt 3 failed. File: C:\Users\Public\Documents\app\FirefoxPortable\App\Firefox\firefox.exe. Last error: 32
+NS_main: callback app file open attempt 4 failed. File: C:\Users\Public\Documents\app\FirefoxPortable\App\Firefox\firefox.exe. Last error: 32
+NS_main: callback app file open attempt 5 failed. File: C:\Users\Public\Documents\app\FirefoxPortable\App\Firefox\firefox.exe. Last error: 32
+NS_main: callback app file open attempt 6 failed. File: C:\Users\Public\Documents\app\FirefoxPortable\App\Firefox\firefox.exe. Last error: 32
+NS_main: callback app file open attempt 7 failed. File: C:\Users\Public\Documents\app\FirefoxPortable\App\Firefox\firefox.exe. Last error: 32
+NS_main: callback app file open attempt 8 failed. File: C:\Users\Public\Documents\app\FirefoxPortable\App\Firefox\firefox.exe. Last error: 32
+NS_main: callback app file open attempt 9 failed. File: C:\Users\Public\Documents\app\FirefoxPortable\App\Firefox\firefox.exe. Last error: 32
+NS_main: callback app file open attempt 10 failed. File: C:\Users\Public\Documents\app\FirefoxPortable\App\Firefox\firefox.exe. Last error: 32
+NS_main: callback app file in use, continuing without exclusive access for executable file: C:\Users\Public\Documents\app\FirefoxPortable\App\Firefox\firefox.exe
+UPDATE TYPE partial
+PREPARE PATCH xul.dll.sig
+PREPARE PATCH xul.dll
+PREPARE PATCH updater.exe
+PREPARE PATCH uninstall/helper.exe
+PREPARE PATCH softokn3.dll
+PREPARE ADD removed-files
+PREPARE PATCH qipcap.dll
+PREPARE ADD precomplete
+PREPARE PATCH plugin-hang-ui.exe
+PREPARE PATCH plugin-container.exe.sig
+PREPARE PATCH plugin-container.exe
+PREPARE PATCH platform.ini
+PREPARE PATCH pingsender.exe
+PREPARE PATCH omni.ja
+PREPARE PATCH nssdbm3.dll
+PREPARE PATCH nssckbi.dll
+PREPARE PATCH nss3.dll
+PREPARE PATCH mozglue.dll
+PREPARE PATCH mozavutil.dll
+PREPARE PATCH mozavcodec.dll
+PREPARE PATCH minidump-analyzer.exe
+PREPARE PATCH maintenanceservice_installer.exe
+PREPARE PATCH maintenanceservice.exe
+PREPARE PATCH libGLESv2.dll
+PREPARE PATCH libEGL.dll
+PREPARE PATCH lgpllibs.dll
+PREPARE PATCH gmp-clearkey/0.1/clearkey.dll.sig
+PREPARE PATCH gmp-clearkey/0.1/clearkey.dll
+PREPARE PATCH freebl3.dll
+PREPARE PATCH fonts/TwemojiMozilla.ttf
+PREPARE PATCH firefox.exe.sig
+PREPARE PATCH firefox.exe
+PREPARE PATCH dependentlibs.list
+PREPARE PATCH crashreporter.exe
+PREPARE ADD chrome.manifest
+PREPARE PATCH browser/omni.ja
+PREPARE PATCH browser/features/webcompat@mozilla.org.xpi
+PREPARE PATCH browser/features/webcompat-reporter@mozilla.org.xpi
+PREPARE PATCH browser/features/screenshots@mozilla.org.xpi
+PREPARE PATCH browser/features/formautofill@mozilla.org.xpi
+PREPARE PATCH browser/blocklist.xml
+PREPARE PATCH breakpadinjector.dll
+PREPARE PATCH application.ini
+PREPARE PATCH IA2Marshal.dll
+PREPARE PATCH AccessibleMarshal.dll
+PREPARE PATCH AccessibleHandler.dll
+PREPARE ADD browser/features/fxmonitor@mozilla.org.xpi
+EXECUTE PATCH xul.dll.sig
+EXECUTE PATCH xul.dll
+EXECUTE PATCH updater.exe
+EXECUTE PATCH uninstall/helper.exe
+EXECUTE PATCH softokn3.dll
+EXECUTE ADD removed-files
+EXECUTE PATCH qipcap.dll
+EXECUTE ADD precomplete
+EXECUTE PATCH plugin-hang-ui.exe
+EXECUTE PATCH plugin-container.exe.sig
+EXECUTE PATCH plugin-container.exe
+EXECUTE PATCH platform.ini
+EXECUTE PATCH pingsender.exe
+EXECUTE PATCH omni.ja
+EXECUTE PATCH nssdbm3.dll
+EXECUTE PATCH nssckbi.dll
+EXECUTE PATCH nss3.dll
+EXECUTE PATCH mozglue.dll
+EXECUTE PATCH mozavutil.dll
+EXECUTE PATCH mozavcodec.dll
+EXECUTE PATCH minidump-analyzer.exe
+EXECUTE PATCH maintenanceservice_installer.exe
+EXECUTE PATCH maintenanceservice.exe
+EXECUTE PATCH libGLESv2.dll
+EXECUTE PATCH libEGL.dll
+EXECUTE PATCH lgpllibs.dll
+EXECUTE PATCH gmp-clearkey/0.1/clearkey.dll.sig
+EXECUTE PATCH gmp-clearkey/0.1/clearkey.dll
+EXECUTE PATCH freebl3.dll
+EXECUTE PATCH fonts/TwemojiMozilla.ttf
+EXECUTE PATCH firefox.exe.sig
+EXECUTE PATCH firefox.exe
+EXECUTE PATCH dependentlibs.list
+EXECUTE PATCH crashreporter.exe
+EXECUTE ADD chrome.manifest
+EXECUTE PATCH browser/omni.ja
+EXECUTE PATCH browser/features/webcompat@mozilla.org.xpi
+EXECUTE PATCH browser/features/webcompat-reporter@mozilla.org.xpi
+EXECUTE PATCH browser/features/screenshots@mozilla.org.xpi
+EXECUTE PATCH browser/features/formautofill@mozilla.org.xpi
+EXECUTE PATCH browser/blocklist.xml
+EXECUTE PATCH breakpadinjector.dll
+EXECUTE PATCH application.ini
+EXECUTE PATCH IA2Marshal.dll
+EXECUTE PATCH AccessibleMarshal.dll
+EXECUTE PATCH AccessibleHandler.dll
+EXECUTE ADD browser/features/fxmonitor@mozilla.org.xpi
+FINISH PATCH xul.dll.sig
+FINISH PATCH xul.dll
+ensure_remove: failed to remove file: C:\Users\Public\Documents\app\FirefoxPortable\App\Firefox/xul.dll.moz-backup, rv: -1, err: 13
+backup_discard: unable to remove: xul.dll.moz-backup
+backup_discard: failed to schedule OS reboot removal of file: xul.dll
+FINISH PATCH updater.exe
+ensure_remove: failed to remove file: C:\Users\Public\Documents\app\FirefoxPortable\App\Firefox/updater.exe.moz-backup, rv: -1, err: 13
+backup_discard: unable to remove: updater.exe.moz-backup
+backup_discard: failed to schedule OS reboot removal of file: updater.exe
+FINISH PATCH uninstall/helper.exe
+FINISH PATCH softokn3.dll
+ensure_remove: failed to remove file: C:\Users\Public\Documents\app\FirefoxPortable\App\Firefox/softokn3.dll.moz-backup, rv: -1, err: 13
+backup_discard: unable to remove: softokn3.dll.moz-backup
+backup_discard: failed to schedule OS reboot removal of file: softokn3.dll
+FINISH ADD removed-files
+FINISH PATCH qipcap.dll
+FINISH ADD precomplete
+FINISH PATCH plugin-hang-ui.exe
+FINISH PATCH plugin-container.exe.sig
+FINISH PATCH plugin-container.exe
+FINISH PATCH platform.ini
+FINISH PATCH pingsender.exe
+FINISH PATCH omni.ja
+ensure_remove: failed to remove file: C:\Users\Public\Documents\app\FirefoxPortable\App\Firefox/omni.ja.moz-backup, rv: -1, err: 13
+backup_discard: unable to remove: omni.ja.moz-backup
+backup_discard: failed to schedule OS reboot removal of file: omni.ja
+FINISH PATCH nssdbm3.dll
+FINISH PATCH nssckbi.dll
+ensure_remove: failed to remove file: C:\Users\Public\Documents\app\FirefoxPortable\App\Firefox/nssckbi.dll.moz-backup, rv: -1, err: 13
+backup_discard: unable to remove: nssckbi.dll.moz-backup
+backup_discard: failed to schedule OS reboot removal of file: nssckbi.dll
+FINISH PATCH nss3.dll
+ensure_remove: failed to remove file: C:\Users\Public\Documents\app\FirefoxPortable\App\Firefox/nss3.dll.moz-backup, rv: -1, err: 13
+backup_discard: unable to remove: nss3.dll.moz-backup
+backup_discard: failed to schedule OS reboot removal of file: nss3.dll
+FINISH PATCH mozglue.dll
+ensure_remove: failed to remove file: C:\Users\Public\Documents\app\FirefoxPortable\App\Firefox/mozglue.dll.moz-backup, rv: -1, err: 13
+backup_discard: unable to remove: mozglue.dll.moz-backup
+backup_discard: failed to schedule OS reboot removal of file: mozglue.dll
+FINISH PATCH mozavutil.dll
+ensure_remove: failed to remove file: C:\Users\Public\Documents\app\FirefoxPortable\App\Firefox/mozavutil.dll.moz-backup, rv: -1, err: 13
+backup_discard: unable to remove: mozavutil.dll.moz-backup
+backup_discard: failed to schedule OS reboot removal of file: mozavutil.dll
+FINISH PATCH mozavcodec.dll
+ensure_remove: failed to remove file: C:\Users\Public\Documents\app\FirefoxPortable\App\Firefox/mozavcodec.dll.moz-backup, rv: -1, err: 13
+backup_discard: unable to remove: mozavcodec.dll.moz-backup
+backup_discard: failed to schedule OS reboot removal of file: mozavcodec.dll
+FINISH PATCH minidump-analyzer.exe
+FINISH PATCH maintenanceservice_installer.exe
+FINISH PATCH maintenanceservice.exe
+FINISH PATCH libGLESv2.dll
+FINISH PATCH libEGL.dll
+FINISH PATCH lgpllibs.dll
+ensure_remove: failed to remove file: C:\Users\Public\Documents\app\FirefoxPortable\App\Firefox/lgpllibs.dll.moz-backup, rv: -1, err: 13
+backup_discard: unable to remove: lgpllibs.dll.moz-backup
+backup_discard: failed to schedule OS reboot removal of file: lgpllibs.dll
+FINISH PATCH gmp-clearkey/0.1/clearkey.dll.sig
+FINISH PATCH gmp-clearkey/0.1/clearkey.dll
+FINISH PATCH freebl3.dll
+ensure_remove: failed to remove file: C:\Users\Public\Documents\app\FirefoxPortable\App\Firefox/freebl3.dll.moz-backup, rv: -1, err: 13
+backup_discard: unable to remove: freebl3.dll.moz-backup
+backup_discard: failed to schedule OS reboot removal of file: freebl3.dll
+FINISH PATCH fonts/TwemojiMozilla.ttf
+ensure_remove: failed to remove file: C:\Users\Public\Documents\app\FirefoxPortable\App\Firefox/fonts/TwemojiMozilla.ttf.moz-backup, rv: -1, err: 13
+backup_discard: unable to remove: fonts/TwemojiMozilla.ttf.moz-backup
+backup_discard: failed to schedule OS reboot removal of file: fonts/TwemojiMozilla.ttf
+FINISH PATCH firefox.exe.sig
+FINISH PATCH firefox.exe
+ensure_remove: failed to remove file: C:\Users\Public\Documents\app\FirefoxPortable\App\Firefox/firefox.exe.moz-backup, rv: -1, err: 13
+backup_discard: unable to remove: firefox.exe.moz-backup
+backup_discard: failed to schedule OS reboot removal of file: firefox.exe
+FINISH PATCH dependentlibs.list
+FINISH PATCH crashreporter.exe
+FINISH ADD chrome.manifest
+FINISH PATCH browser/omni.ja
+ensure_remove: failed to remove file: C:\Users\Public\Documents\app\FirefoxPortable\App\Firefox/browser/omni.ja.moz-backup, rv: -1, err: 13
+backup_discard: unable to remove: browser/omni.ja.moz-backup
+backup_discard: failed to schedule OS reboot removal of file: browser/omni.ja
+FINISH PATCH browser/features/webcompat@mozilla.org.xpi
+ensure_remove: failed to remove file: C:\Users\Public\Documents\app\FirefoxPortable\App\Firefox/browser/features/webcompat@mozilla.org.xpi.moz-backup, rv: -1, err: 13
+backup_discard: unable to remove: browser/features/webcompat@mozilla.org.xpi.moz-backup
+backup_discard: failed to schedule OS reboot removal of file: browser/features/webcompat@mozilla.org.xpi
+FINISH PATCH browser/features/webcompat-reporter@mozilla.org.xpi
+FINISH PATCH browser/features/screenshots@mozilla.org.xpi
+ensure_remove: failed to remove file: C:\Users\Public\Documents\app\FirefoxPortable\App\Firefox/browser/features/screenshots@mozilla.org.xpi.moz-backup, rv: -1, err: 13
+backup_discard: unable to remove: browser/features/screenshots@mozilla.org.xpi.moz-backup
+backup_discard: failed to schedule OS reboot removal of file: browser/features/screenshots@mozilla.org.xpi
+FINISH PATCH browser/features/formautofill@mozilla.org.xpi
+ensure_remove: failed to remove file: C:\Users\Public\Documents\app\FirefoxPortable\App\Firefox/browser/features/formautofill@mozilla.org.xpi.moz-backup, rv: -1, err: 13
+backup_discard: unable to remove: browser/features/formautofill@mozilla.org.xpi.moz-backup
+backup_discard: failed to schedule OS reboot removal of file: browser/features/formautofill@mozilla.org.xpi
+FINISH PATCH browser/blocklist.xml
+FINISH PATCH breakpadinjector.dll
+FINISH PATCH application.ini
+FINISH PATCH IA2Marshal.dll
+ensure_remove: failed to remove file: C:\Users\Public\Documents\app\FirefoxPortable\App\Firefox/IA2Marshal.dll.moz-backup, rv: -1, err: 13
+backup_discard: unable to remove: IA2Marshal.dll.moz-backup
+backup_discard: failed to schedule OS reboot removal of file: IA2Marshal.dll
+FINISH PATCH AccessibleMarshal.dll
+ensure_remove: failed to remove file: C:\Users\Public\Documents\app\FirefoxPortable\App\Firefox/AccessibleMarshal.dll.moz-backup, rv: -1, err: 13
+backup_discard: unable to remove: AccessibleMarshal.dll.moz-backup
+backup_discard: failed to schedule OS reboot removal of file: AccessibleMarshal.dll
+FINISH PATCH AccessibleHandler.dll
+FINISH ADD browser/features/fxmonitor@mozilla.org.xpi
+succeeded
+calling QuitProgressUI
+NS_main: unable to remove directory: tobedeleted, err: 41
+NS_main: failed to schedule OS reboot removal of directory: tobedeleted
