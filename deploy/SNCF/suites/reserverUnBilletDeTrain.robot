@@ -1,4 +1,6 @@
-+#coding utf-8
+#coding utf-8
+
+[Documentation]  Test Suite controlant la NR des différentes pages du site Web de la *SNCF*
 
 *** Settings ***
 
