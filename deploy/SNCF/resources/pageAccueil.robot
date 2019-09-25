@@ -26,7 +26,7 @@ Renseigner Les Criteres De Recherche
   Run Keyword If  '${presenceBandeauCookies}'=='${TRUE}'     Click Button  ${BOUTON_ACCEPTER_COOKIES}
 
   # Renseigner les villes de departs et d'arrivees puis valider
-  Input Text  id=departure-place  Rennes
-  Input Text  id=arrival-place    Brest
+  Input Text  id=departure-place  Rennes (Toutes gares)
+  Input Text  id=arrival-place    Brest (Toutes gares)
   Click Element  ${BOUTON_RECHERCHER}
   Log  PARCOURS DE LA PAGE D ACCUEIL TERMINE
