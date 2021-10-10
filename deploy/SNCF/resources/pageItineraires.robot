@@ -9,4 +9,4 @@ Library  SeleniumLibrary
 Cliquer Sur Le Voyage
     [Documentation]  Selectionner le voyage
 
-    Click Element  class=results-item
+    Click Element       class:results-item
