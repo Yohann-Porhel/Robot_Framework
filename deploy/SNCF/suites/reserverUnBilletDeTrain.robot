@@ -4,7 +4,7 @@
 *** Settings ***
 Resource            ../resources/pageAccueil.robot
 Resource            ../resources/pageItineraires.robot
-Test Teardown       Close All Browsers
+Suite Teardown      Close All Browsers
 
 
 *** Test Cases ***
